@@ -1,0 +1,67 @@
+{
+  "name": "@rsj-de/pdfmergesortsplit",
+  "version": "0.1.0",
+  "description": "Embed the RSJ PDF Merge, Sort & Split editor in your own product: one iframe, a small SDK, documents never leave the browser.",
+  "keywords": [
+    "pdf",
+    "merge",
+    "split",
+    "pdf-editor",
+    "iframe",
+    "rsj"
+  ],
+  "homepage": "https://pdfmerge.rsj.de/docs/getting-started",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdfmergesortsplit/pdfmergesortsplit.git",
+    "directory": "sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/pdfmergesortsplit/pdfmergesortsplit/issues"
+  },
+  "author": "RSJ Software GmbH <ruediger.jungbeck@rsj.de> (https://rsj.de)",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./types/react.d.ts",
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "types",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "pnpm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "react": "^19.2.6",
+    "vite": "^8.0.13"
+  }
+}

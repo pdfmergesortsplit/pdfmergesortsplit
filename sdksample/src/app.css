@@ -1,0 +1,134 @@
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font: 14px/1.4 system-ui, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.app h1 {
+  margin: 0 12px 0 0;
+  font-size: 15px;
+}
+
+.app button {
+  padding: 6px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.app button:hover {
+  background: #f1f5f9;
+}
+
+.app .status {
+  margin-left: auto;
+  color: #475569;
+  font-size: 13px;
+}
+
+.app main {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Page provenance, fetched with getPages() after "Show provenance". */
+.app .provenance {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  max-height: 45vh;
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.app .provenance-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.app .provenance-header h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.app .provenance-header span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.app .provenance-header button {
+  margin-left: auto;
+}
+
+.app .provenance-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+.app .provenance table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+
+.app .provenance th,
+.app .provenance td {
+  padding: 6px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.app .provenance th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff;
+  color: #475569;
+  font-weight: 600;
+}
+
+.app .provenance code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: #334155;
+  word-break: break-all;
+}
+
+.app .provenance-empty {
+  margin: 0;
+  padding: 14px;
+  color: #64748b;
+}

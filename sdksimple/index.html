@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RSJ PDF Merge, Sort &amp; Split — plain JavaScript sample</title>
+    <style>
+      :root { color-scheme: light; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        font: 14px/1.4 system-ui, sans-serif;
+        color: #0f172a;
+        background: #f8fafc;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        border-bottom: 1px solid #e2e8f0;
+        background: #fff;
+      }
+      header h1 { margin: 0 12px 0 0; font-size: 15px; }
+      button {
+        padding: 6px 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        background: #fff;
+        font: inherit;
+        cursor: pointer;
+      }
+      button:hover { background: #f1f5f9; }
+      #status { margin-left: auto; color: #475569; font-size: 13px; }
+      main { flex: 1; min-height: 0; }
+      #editor { width: 100%; height: 100%; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>plain JavaScript sample</h1>
+      <button id="pick" type="button">Add PDF…</button>
+      <button id="pages" type="button">Show pages</button>
+      <button id="save-all" type="button">Save all (ZIP)</button>
+      <span id="status">starting…</span>
+      <input id="file" type="file" accept="application/pdf,.pdf" multiple hidden />
+    </header>
+    <main>
+      <div id="editor"></div>
+    </main>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
