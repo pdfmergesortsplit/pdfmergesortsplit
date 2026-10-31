@@ -1,6 +1,6 @@
 {
   "name": "@rsj-de/pdfmergesortsplit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Embed the RSJ PDF Merge, Sort & Split editor in your own product: one iframe, a small SDK, documents never leave the browser.",
   "keywords": [
     "pdf",
