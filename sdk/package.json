@@ -40,13 +40,14 @@
   "files": [
     "dist",
     "types",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
   },
   "sideEffects": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "vite build",
     "prepublishOnly": "pnpm run build"

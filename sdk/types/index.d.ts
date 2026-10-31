@@ -8,6 +8,12 @@ export interface PDFMergeConfig {
   title?: string;
   /** Icon (URL) that replaces ours in the title bar. */
   icon?: string;
+  /**
+   * OAuth client ID of your own Google Cloud project for the Drive integration.
+   * It overrides the one compiled into the editor, so a self-hosted deployment
+   * needs no rebuild. Without it the Drive buttons are hidden.
+   */
+  googleClientId?: string;
   /** Hide parts of the editor's UI. Everything is shown by default. */
   ui?: {
     logo?: boolean;
